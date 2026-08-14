@@ -30,3 +30,17 @@ else: data [item for item in self. original values if item.lower().startswith(ty
 self['values'] = data
 If data:
 self.event generate('<Down>')
+
+                      
+root Tk()
+root.title("Premium Translator")
+root.geometry ("530x760")
+root.resizable (False, False)
+bg Gradient Frame(root, "navy", "deep sky blue") bg.pack(fill-"both", expand=True)
+title_label Label (bg, text=" UNI Translator", font ("Segoe UI Black", 36, "bold"), bg="navy", fg="white")
+title_label.place ( x = 100 y = 40 )
+separator Canvas (bg, width=330, height 3, bg="white", highlightthickness-0) separator.place ( x = 100 , y = 100 )
+src_label Label (bg, text="Enter Text", font("Segoe UI Semibold", 18), bg="navy", fg="white")
+src_label.place ( x = 200 y = 130 )
+sor_txt Text (bg, font=("Segoe UI", 14), wrap=WORD, bg="white", fg="black",
+relief-FLAT, bd = 61 sor_txt.place ( x + 40 y = 170 height 160, width=450)
