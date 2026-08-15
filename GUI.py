@@ -43,4 +43,16 @@ separator Canvas (bg, width=330, height 3, bg="white", highlightthickness-0) sep
 src_label Label (bg, text="Enter Text", font("Segoe UI Semibold", 18), bg="navy", fg="white")
 src_label.place ( x = 200 y = 130 )
 sor_txt Text (bg, font=("Segoe UI", 14), wrap=WORD, bg="white", fg="black",
-relief-FLAT, bd = 61 sor_txt.place ( x + 40 y = 170 height 160, width=450)
+relief-FLAT,bd = 61)
+sor_txt.place ( x + 40 y = 170 height 160, width=450)
+
+languages GoogleTranslator().get_supported_languages ()
+style ttk.Style()
+style.theme use("clam")
+style.configure("TCombobox",
+fieldbackground="white",
+background="white",
+bordercolor="black",
+foreground "black",
+padding=5)
+                      
