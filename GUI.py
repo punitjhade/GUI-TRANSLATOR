@@ -55,4 +55,11 @@ background="white",
 bordercolor="black",
 foreground "black",
 padding=5)
+
+comb_sor SearchableCombobox (bg, values languages, font=("Segoe UI", 12))
+comb_sor.place( x = 40 y = 360 height=40, width=200)
+comb_sor.set("english")
+comb dest SearchableCombobox (bg, values-languages, font=("Segoe UI", 12))
+comb dest.place ( x = 290 y = 360 height=40, width=200)
+comb_dest.set("hindi")
                       
