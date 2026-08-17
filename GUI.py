@@ -1,4 +1,4 @@
-пер
+
 from tkinter import *
 from tkinter import ttk
 from deep translator import GoogleTranslator
@@ -62,4 +62,16 @@ comb_sor.set("english")
 comb dest SearchableCombobox (bg, values-languages, font=("Segoe UI", 12))
 comb dest.place ( x = 290 y = 360 height=40, width=200)
 comb_dest.set("hindi")
+
+def translate_text():
+src comb_sor.get()
+dest comb_dest.get()
+text sor_txt.get("1.0", END)
+try:
+translated GoogleTranslator (source=src, target=dest).translate (text)
+dest_txt.delete("1.0", END)
+dest txt.insert (END, translated)
+except Exception as e:
+dest_txt.delete("1.0", END)
+dest_txt.insert (END, "Error: " + str(e))                      
                       
