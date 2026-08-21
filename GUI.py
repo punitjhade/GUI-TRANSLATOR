@@ -74,4 +74,13 @@ dest txt.insert (END, translated)
 except Exception as e:
 dest_txt.delete("1.0", END)
 dest_txt.insert (END, "Error: " + str(e))                      
+
+btn Button (bg, text="Translate",
+command-translate text,
+font=("Segoe UI Semibold", 16),
+bg="deepskyblue",
+fg="white",
+activebackground="skyblue",
+bd=0, relief=RIDGE)
+btn.place ( x = 180 y = 420 height=45, width=170)
                       
