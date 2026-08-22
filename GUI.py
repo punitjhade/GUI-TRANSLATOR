@@ -84,3 +84,9 @@ activebackground="skyblue",
 bd=0, relief=RIDGE)
 btn.place ( x = 180 y = 420 height=45, width=170)
                       
+out_label Label (bg, text="Translated Text", font=("Segoe UI Semibold", 18), bg="navy", fg="white")
+out_label.place ( x = 180 y = 480 )
+dest_txt Text (bg, font=("Segoe UI", 14), wrap=WORD, bg="white", fg="black", relief-FLAT, od = 6
+dest_txt.place ( x = 40 , y = 520 height=180, width=450)
+root.mainloop()
+                      
